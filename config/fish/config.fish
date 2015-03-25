@@ -24,3 +24,5 @@ set PATH /usr/local/share/npm/bin $PATH
 set -xg GOPATH $HOME/code/Go
 set PATH $GOPATH/bin $PATH
 
+# Load aliases
+source ~/.aliases
