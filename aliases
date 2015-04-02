@@ -3,3 +3,6 @@ alias rp="touch ~/.pow/restart.txt"
 
 # Coffee timer :)
 alias ct="sleep 150; and say coffee is ready"
+
+# iwfm cli with local iwfm wine setup
+alias iwfm_wine_cli="iwfm iwfm://admin%40wfm.com:injixo@localhost:45058"
