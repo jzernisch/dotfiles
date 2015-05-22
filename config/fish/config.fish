@@ -17,6 +17,10 @@ rbenv rehash >/dev/null ^&1
 # recommended by brew doctor:
 set PATH /usr/local/bin /usr/local/sbin $PATH
 
+# NVM (node version manager)
+set -x NVM_DIR ~/.nvm
+source ~/.config/fish/nvm-wrapper/nvm.fish
+
 # npm
 set PATH /usr/local/share/npm/bin $PATH
 
