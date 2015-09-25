@@ -30,3 +30,6 @@ set PATH $GOPATH/bin $PATH
 
 # Load aliases
 source ~/.aliases
+
+# Load secrets
+source ~/.secrets
