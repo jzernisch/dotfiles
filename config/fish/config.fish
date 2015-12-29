@@ -33,3 +33,6 @@ source ~/.aliases
 
 # Load secrets
 source ~/.secrets
+
+# Add hook for direnv
+eval (direnv hook fish)
