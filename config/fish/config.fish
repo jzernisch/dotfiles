@@ -3,6 +3,12 @@ set -xg VISUAL vim
 set -xg EDITOR $VISUAL
 set -xg BUNDLER_EDITOR subl
 
+# docker
+set -xg DOCKER_HOST tcp://192.168.99.100:2376
+set -xg DOCKER_CERT_PATH /Users/jzernisch/.docker/machine/machines/dinghy
+set -xg DOCKER_TLS_VERIFY 1
+set -xg DOCKER_MACHINE_NAME dinghy
+
 # load thoughtbot/dotfiles scripts
 set PATH $HOME/.bin $PATH
 
