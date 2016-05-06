@@ -1,7 +1,7 @@
 # set editors
 set -xg VISUAL vim
 set -xg EDITOR $VISUAL
-set -xg BUNDLER_EDITOR subl
+set -xg BUNDLER_EDITOR $VISUAL
 
 # docker
 set -xg DOCKER_HOST tcp://192.168.99.100:2376
