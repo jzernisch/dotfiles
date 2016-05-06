@@ -7,31 +7,46 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
+Plugin 'ervandew/supertab'
+Plugin 'The-NERD-Commenter'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'lambdatoast/elm.vim'
+Plugin 'altercation/vim-colors-solarized.git'
 
 call vundle#end()
+
 filetype plugin indent on
+let mapleader = ","
 
-
+" appearance
 syntax on
 set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 set ruler
+set number
+set cursorline
 
+" search
 set noignorecase
 set incsearch
 set hlsearch
+nmap <F2> :nohlsearch<CR>
 
+" indentation
 set autoindent
+set expandtab
+set shiftwidth=2
+set softtabstop=-1 " use value of shiftwidth
 
-let mapleader = ","
-nmap <leader>p :CtrlP<CR>
-nmap <CR> :nohlsearch<CR>
-nmap <leader>r :source ~/.vimrc<CR>
+" vimrc
+nmap <leader>rc :source ~/.vimrc<CR>
 nmap <leader>ec :tabnew ~/.vimrc<cr>
 
-autocmd BufWritePre * :%s/\s\+$//e " trim trailing whitespace on save
+" ctrlp
+let g:ctrlp_match_window_reversed = 0
 
-
-
-
+" whitespace
+autocmd BufWritePre * :%substitute/\s\+$//e
