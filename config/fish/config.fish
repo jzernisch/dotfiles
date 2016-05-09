@@ -9,12 +9,6 @@ set -xg DOCKER_CERT_PATH /Users/jzernisch/.docker/machine/machines/dinghy
 set -xg DOCKER_TLS_VERIFY 1
 set -xg DOCKER_MACHINE_NAME dinghy
 
-# load thoughtbot/dotfiles scripts
-set PATH $HOME/.bin $PATH
-
-# mkdir .git/safe in the root of repositories you trust
-# set PATH .git/safe/../../bin $PATH
-
 # rbenv
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
