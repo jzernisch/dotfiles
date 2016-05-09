@@ -15,6 +15,7 @@ Plugin 'lambdatoast/elm.vim'
 Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()
 
