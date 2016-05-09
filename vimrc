@@ -22,6 +22,17 @@ call vundle#end()
 filetype plugin indent on
 let mapleader = ","
 
+" vimrc
+nmap <leader>ec :tabnew ~/.vimrc<cr>
+nmap <leader>rc :source ~/.vimrc<cr>
+
+" Vundle
+nmap <leader>pi :PluginInstall<cr>
+nmap <leader>pc :PluginClean<cr>
+
+" NERDTree
+nmap <leader>l :NERDTreeToggle<cr>
+
 " appearance
 syntax on
 set background=dark
@@ -42,11 +53,6 @@ set autoindent
 set expandtab
 set shiftwidth=2
 set softtabstop=-1 " use value of shiftwidth
-
-" vimrc
-nmap <leader>rc :source ~/.vimrc<CR>
-nmap <leader>ec :tabnew ~/.vimrc<cr>
-nmap <leader>l :NERDTreeToggle<cr>
 
 " ctrlp
 let g:ctrlp_match_window_reversed = 0
