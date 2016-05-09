@@ -10,12 +10,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'ervandew/supertab'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'lambdatoast/elm.vim'
 Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'scrooloose/nerdtree'
+Plugin 'sheerun/vim-polyglot'
 
 call vundle#end()
 
@@ -46,6 +46,7 @@ set softtabstop=-1 " use value of shiftwidth
 " vimrc
 nmap <leader>rc :source ~/.vimrc<CR>
 nmap <leader>ec :tabnew ~/.vimrc<cr>
+nmap <leader>l :NERDTreeToggle<cr>
 
 " ctrlp
 let g:ctrlp_match_window_reversed = 0
