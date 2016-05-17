@@ -13,7 +13,6 @@ Plugin 'ervandew/supertab'
 Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
 
@@ -21,6 +20,10 @@ call vundle#end()
 
 filetype plugin indent on
 let mapleader = ","
+
+nmap ö G
+nmap ä /
+nmap <F2> :nohlsearch<CR>
 
 " vimrc
 nmap <leader>ec :tabnew ~/.vimrc<cr>
@@ -46,7 +49,6 @@ set cursorline
 set noignorecase
 set incsearch
 set hlsearch
-nmap <F2> :nohlsearch<CR>
 
 " indentation
 set autoindent
